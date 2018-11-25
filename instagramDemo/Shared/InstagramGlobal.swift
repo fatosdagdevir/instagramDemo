@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class InstagramGlobal {
+    
+    static let shared = InstagramGlobal()
+    
+    var auth_token = ""
+    
+    private init() {}
+}

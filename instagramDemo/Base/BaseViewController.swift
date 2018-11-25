@@ -10,26 +10,26 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    lazy var loading: UIActivityIndicatorView = {
+        let screen = UIScreen.main.bounds
+        let loading = UIActivityIndicatorView(frame: CGRect(x: screen.width / 2 - 25, y: screen.height / 2, width: 50, height: 50))
+        loading.color = UIColor.purple
+        view.addSubview(loading)
+        view.bringSubview(toFront: loading)
+        return loading
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func startLoading() {
+        loading.startAnimating()
+        loading.isHidden = false
     }
-    */
-
+    func stopLoading() {
+        loading.stopAnimating()
+        loading.isHidden = true
+    }
 }
