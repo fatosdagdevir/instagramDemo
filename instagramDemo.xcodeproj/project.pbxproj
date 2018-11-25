@@ -19,6 +19,9 @@
 		4A6DDEE721AB131700CC0E2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDEE621AB131700CC0E2C /* LoginViewController.swift */; };
 		4A6DDEEA21AB167B00CC0E2C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDEE921AB167B00CC0E2C /* BaseViewController.swift */; };
 		4A6DDEED21AB234B00CC0E2C /* InstagramGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDEEC21AB234B00CC0E2C /* InstagramGlobal.swift */; };
+		4AC182B821AB287400F58436 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182B721AB287400F58436 /* NetworkService.swift */; };
+		4AC182BB21AB28DA00F58436 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182BA21AB28DA00F58436 /* Dictionary.swift */; };
+		4AC182BD21AB291C00F58436 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182BC21AB291C00F58436 /* ErrorModel.swift */; };
 		57764FA4EE4069EC2B4705D4 /* Pods_instagramDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBB858AC3173C27F5456210 /* Pods_instagramDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,9 @@
 		4A6DDEE621AB131700CC0E2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A6DDEE921AB167B00CC0E2C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4A6DDEEC21AB234B00CC0E2C /* InstagramGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramGlobal.swift; sourceTree = "<group>"; };
+		4AC182B721AB287400F58436 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4AC182BA21AB28DA00F58436 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		4AC182BC21AB291C00F58436 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		4ACD56F2D1791ED3002BF363 /* Pods-instagramDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramDemo/Pods-instagramDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6DA9C3D0AFC9D9F5310DF9E4 /* Pods_instagramDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C48316F672F8CBEB77F143 /* Pods-instagramDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramDemoUITests/Pods-instagramDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		4A6DDEB021AB0B9300CC0E2C /* instagramDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4AC182B921AB28CF00F58436 /* Extensions */,
 				4A6DDEEB21AB232700CC0E2C /* Shared */,
 				4A6DDEE821AB167000CC0E2C /* Base */,
 				4A6DDEE521AB11EE00CC0E2C /* API */,
@@ -163,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				4A6DDEE321AB11E900CC0E2C /* Constants.swift */,
+				4AC182B721AB287400F58436 /* NetworkService.swift */,
+				4AC182BC21AB291C00F58436 /* ErrorModel.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -181,6 +190,14 @@
 				4A6DDEEC21AB234B00CC0E2C /* InstagramGlobal.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		4AC182B921AB28CF00F58436 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4AC182BA21AB28DA00F58436 /* Dictionary.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9779DCAFC83B78A5EB0A93FB /* Frameworks */ = {
@@ -428,6 +445,9 @@
 				4A6DDEED21AB234B00CC0E2C /* InstagramGlobal.swift in Sources */,
 				4A6DDEEA21AB167B00CC0E2C /* BaseViewController.swift in Sources */,
 				4A6DDEB221AB0B9300CC0E2C /* AppDelegate.swift in Sources */,
+				4AC182BB21AB28DA00F58436 /* Dictionary.swift in Sources */,
+				4AC182B821AB287400F58436 /* NetworkService.swift in Sources */,
+				4AC182BD21AB291C00F58436 /* ErrorModel.swift in Sources */,
 				4A6DDEE421AB11E900CC0E2C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,6 +47,7 @@ class LoginViewController: BaseViewController {
     }
     
     func handleAuth(authToken: String)  {
+        print(authToken)
         InstagramGlobal.shared.auth_token = authToken
     }
 }
