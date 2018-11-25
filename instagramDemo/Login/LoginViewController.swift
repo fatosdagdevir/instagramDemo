@@ -12,7 +12,7 @@ import WebKit
 class LoginViewController: BaseViewController {
     
     @IBOutlet weak var webView: UIWebView!
-    var loadingView : UIActivityIndicatorView!
+    var loadingView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,14 +49,15 @@ class LoginViewController: BaseViewController {
     func handleAuth(authToken: String)  {
         print(authToken)
         InstagramGlobal.shared.auth_token = authToken
+        
+        let userMediaVC: UserMediaViewController = UIStoryboard.main.instantiateViewController()
+        let navController = UINavigationController(rootViewController: userMediaVC)
+        self.present(navController, animated: true, completion: nil)
     }
 }
 
 extension LoginViewController: UIWebViewDelegate {
     
-    func webViewDidStartLoad(_ webView: UIWebView) {
-        
-    }
     func webViewDidFinishLoad(_ webView: UIWebView) {
         loading.stopAnimating()
     }

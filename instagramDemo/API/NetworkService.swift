@@ -23,7 +23,7 @@ extension NetworkService {
 
 final class NetworkService {
     
-    static let sharedInstance = NetworkService()
+    static let shared = NetworkService()
     
     open class MyServerTrustPolicyManager: ServerTrustPolicyManager {
         

@@ -22,6 +22,17 @@
 		4AC182B821AB287400F58436 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182B721AB287400F58436 /* NetworkService.swift */; };
 		4AC182BB21AB28DA00F58436 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182BA21AB28DA00F58436 /* Dictionary.swift */; };
 		4AC182BD21AB291C00F58436 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182BC21AB291C00F58436 /* ErrorModel.swift */; };
+		4AC182C021AB2B7700F58436 /* UserMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182BF21AB2B7700F58436 /* UserMediaViewController.swift */; };
+		4AC182C321AB304900F58436 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182C221AB304900F58436 /* UIStoryboard.swift */; };
+		4AC182C521AB313B00F58436 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182C421AB313B00F58436 /* UITableView.swift */; };
+		4AC182C721AB31A100F58436 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182C621AB31A100F58436 /* NSObject.swift */; };
+		4AC182CA21AB376800F58436 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182C821AB376800F58436 /* MediaTableViewCell.swift */; };
+		4AC182CB21AB376800F58436 /* MediaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC182C921AB376800F58436 /* MediaTableViewCell.xib */; };
+		4AC182CE21AB394C00F58436 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182CD21AB394C00F58436 /* MediaModel.swift */; };
+		4AC182D021AB399B00F58436 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182CF21AB399B00F58436 /* BaseModel.swift */; };
+		4AC182D221AB3A7100F58436 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182D121AB3A7100F58436 /* UserModel.swift */; };
+		4AC182D421AB3B4800F58436 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182D321AB3B4800F58436 /* LocationModel.swift */; };
+		4AC182D621AB3BF700F58436 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC182D521AB3BF700F58436 /* ImageModel.swift */; };
 		57764FA4EE4069EC2B4705D4 /* Pods_instagramDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBB858AC3173C27F5456210 /* Pods_instagramDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +77,17 @@
 		4AC182B721AB287400F58436 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4AC182BA21AB28DA00F58436 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		4AC182BC21AB291C00F58436 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		4AC182BF21AB2B7700F58436 /* UserMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMediaViewController.swift; sourceTree = "<group>"; };
+		4AC182C221AB304900F58436 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		4AC182C421AB313B00F58436 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		4AC182C621AB31A100F58436 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		4AC182C821AB376800F58436 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		4AC182C921AB376800F58436 /* MediaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaTableViewCell.xib; sourceTree = "<group>"; };
+		4AC182CD21AB394C00F58436 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		4AC182CF21AB399B00F58436 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		4AC182D121AB3A7100F58436 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4AC182D321AB3B4800F58436 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		4AC182D521AB3BF700F58436 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		4ACD56F2D1791ED3002BF363 /* Pods-instagramDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramDemo/Pods-instagramDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6DA9C3D0AFC9D9F5310DF9E4 /* Pods_instagramDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C48316F672F8CBEB77F143 /* Pods-instagramDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramDemoUITests/Pods-instagramDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,13 +148,15 @@
 		4A6DDEB021AB0B9300CC0E2C /* instagramDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4AC182CC21AB390000F58436 /* Model */,
+				4AC182C121AB2DCF00F58436 /* Login */,
+				4AC182BE21AB2B5700F58436 /* Media */,
 				4AC182B921AB28CF00F58436 /* Extensions */,
 				4A6DDEEB21AB232700CC0E2C /* Shared */,
 				4A6DDEE821AB167000CC0E2C /* Base */,
 				4A6DDEE521AB11EE00CC0E2C /* API */,
 				4A6DDEE021AB0E3000CC0E2C /* Supporting Files */,
 				4A6DDEB521AB0B9300CC0E2C /* Main.storyboard */,
-				4A6DDEE621AB131700CC0E2C /* LoginViewController.swift */,
 			);
 			path = instagramDemo;
 			sourceTree = "<group>";
@@ -180,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				4A6DDEE921AB167B00CC0E2C /* BaseViewController.swift */,
+				4AC182CF21AB399B00F58436 /* BaseModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -196,8 +221,40 @@
 			isa = PBXGroup;
 			children = (
 				4AC182BA21AB28DA00F58436 /* Dictionary.swift */,
+				4AC182C221AB304900F58436 /* UIStoryboard.swift */,
+				4AC182C421AB313B00F58436 /* UITableView.swift */,
+				4AC182C621AB31A100F58436 /* NSObject.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4AC182BE21AB2B5700F58436 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				4AC182C821AB376800F58436 /* MediaTableViewCell.swift */,
+				4AC182C921AB376800F58436 /* MediaTableViewCell.xib */,
+				4AC182BF21AB2B7700F58436 /* UserMediaViewController.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		4AC182C121AB2DCF00F58436 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4A6DDEE621AB131700CC0E2C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4AC182CC21AB390000F58436 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AC182CD21AB394C00F58436 /* MediaModel.swift */,
+				4AC182D121AB3A7100F58436 /* UserModel.swift */,
+				4AC182D321AB3B4800F58436 /* LocationModel.swift */,
+				4AC182D521AB3BF700F58436 /* ImageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9779DCAFC83B78A5EB0A93FB /* Frameworks */ = {
@@ -333,6 +390,7 @@
 			files = (
 				4A6DDEBC21AB0B9400CC0E2C /* LaunchScreen.storyboard in Resources */,
 				4A6DDEB921AB0B9400CC0E2C /* Assets.xcassets in Resources */,
+				4AC182CB21AB376800F58436 /* MediaTableViewCell.xib in Resources */,
 				4A6DDEB721AB0B9300CC0E2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,10 +502,20 @@
 				4A6DDEE721AB131700CC0E2C /* LoginViewController.swift in Sources */,
 				4A6DDEED21AB234B00CC0E2C /* InstagramGlobal.swift in Sources */,
 				4A6DDEEA21AB167B00CC0E2C /* BaseViewController.swift in Sources */,
+				4AC182C021AB2B7700F58436 /* UserMediaViewController.swift in Sources */,
+				4AC182CA21AB376800F58436 /* MediaTableViewCell.swift in Sources */,
 				4A6DDEB221AB0B9300CC0E2C /* AppDelegate.swift in Sources */,
 				4AC182BB21AB28DA00F58436 /* Dictionary.swift in Sources */,
+				4AC182C321AB304900F58436 /* UIStoryboard.swift in Sources */,
+				4AC182C521AB313B00F58436 /* UITableView.swift in Sources */,
+				4AC182D021AB399B00F58436 /* BaseModel.swift in Sources */,
+				4AC182D221AB3A7100F58436 /* UserModel.swift in Sources */,
 				4AC182B821AB287400F58436 /* NetworkService.swift in Sources */,
+				4AC182CE21AB394C00F58436 /* MediaModel.swift in Sources */,
+				4AC182D621AB3BF700F58436 /* ImageModel.swift in Sources */,
+				4AC182C721AB31A100F58436 /* NSObject.swift in Sources */,
 				4AC182BD21AB291C00F58436 /* ErrorModel.swift in Sources */,
+				4AC182D421AB3B4800F58436 /* LocationModel.swift in Sources */,
 				4A6DDEE421AB11E900CC0E2C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

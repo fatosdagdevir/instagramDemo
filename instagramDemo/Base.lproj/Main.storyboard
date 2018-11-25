@@ -38,6 +38,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="370" y="134"/>
+        </scene>
+        <!--User Media View Controller-->
+        <scene sceneID="dAH-eZ-Xt0">
+            <objects>
+                <viewController storyboardIdentifier="UserMediaViewController" id="Ohf-nt-t5y" customClass="UserMediaViewController" customModule="instagramDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyS-bw-YbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-2w-VjM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YnB-2w-VjM" firstAttribute="leading" secondItem="usj-j3-tSa" secondAttribute="leading" id="XXA-ju-h0O"/>
+                            <constraint firstItem="usj-j3-tSa" firstAttribute="trailing" secondItem="YnB-2w-VjM" secondAttribute="trailing" id="fYR-YD-d4B"/>
+                            <constraint firstItem="YnB-2w-VjM" firstAttribute="top" secondItem="usj-j3-tSa" secondAttribute="top" id="icX-3J-WRH"/>
+                            <constraint firstItem="usj-j3-tSa" firstAttribute="bottom" secondItem="YnB-2w-VjM" secondAttribute="bottom" id="khQ-om-Noh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="usj-j3-tSa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LpL-h4-yLH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WW3-0e-afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HHZ-PJ-PW6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fBm-nB-iFR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hh3-it-vFQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ohf-nt-t5y" kind="relationship" relationship="rootViewController" id="dXh-ds-JhD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gan-ZV-cql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
