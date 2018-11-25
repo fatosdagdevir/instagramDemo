@@ -10,6 +10,8 @@ import Foundation
 
 struct Constants {
     
+    private static let baseURL = "https://api.instagram.com/v1"
+    
     struct API {
         
         static let INSTAGRAM_AUTHURL = "https://api.instagram.com/oauth/authorize/"
@@ -24,6 +26,12 @@ struct Constants {
         
         static let INSTAGRAM_ACCESS_TOKEN =  "access_token"
         
-        static let INSTAGRAM_SCOPE = "likes+comments+relationships"
+        static let INSTAGRAM_SCOPE = "public_content+likes+comments+relationships"
+    }
+    
+    struct User {
+        
+        static let media = Constants.baseURL +  "/users/self/media/recent/?access_token=" + InstagramGlobal.shared.auth_token
+        
     }
 }
