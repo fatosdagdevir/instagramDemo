@@ -1,5 +1,5 @@
 //
-//  InstagramGlobal.swift
+//  NSObject.swift
 //  instagramDemo
 //
 //  Created by Fatma Dagdevir on 11/25/18.
@@ -8,11 +8,9 @@
 
 import Foundation
 
-class InstagramGlobal {
+extension NSObject {
     
-    static let shared = InstagramGlobal()
-    
-    var auth_token = ""
-    
-    private init() {}
+    class var className: String {
+        return String(describing: self)
+    }
 }
