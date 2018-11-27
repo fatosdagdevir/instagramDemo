@@ -28,9 +28,12 @@ class PostsViewController: BaseViewController {
         tableView.rx
             .willDisplayCell
             .subscribe(onNext: { cell, indexPath in
-            
+                
             })
             .disposed(by: disposeBag)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPostTapped))
+        
         
         tableView.register(UINib(nibName: PostTableViewCell.className, bundle: nil), forCellReuseIdentifier: PostTableViewCell.className)
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -49,5 +52,11 @@ class PostsViewController: BaseViewController {
                 cell.setupCell(viewModel: viewModel)
             }
             .disposed(by: disposeBag)
+    }
+    
+    @objc func addPostTapped() {
+        
+        let addPostVC: AddPostViewController = UIStoryboard.main.instantiateViewController()
+        self.present(addPostVC, animated: true, completion: nil)
     }
 }

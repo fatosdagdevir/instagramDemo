@@ -32,6 +32,5 @@ struct Constants {
     struct User {
         
         static let media = Constants.baseURL +  "/users/self/media/recent/?access_token=" + InstagramGlobal.shared.auth_token
-        
     }
 }

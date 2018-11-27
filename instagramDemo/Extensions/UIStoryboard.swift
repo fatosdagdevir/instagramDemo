@@ -21,15 +21,4 @@ extension UIStoryboard {
             else { fatalError("could not instantiateViewController with identifier \(VC.className)") }
         return viewController
     }
-    
-//    func instantiateViewControllerWithNavigationController<VC: UIViewController>() -> (navigationController: UINavigationController, viewController: VC) {
-//        guard let viewController = self.instantiateViewController(withIdentifier: VC.className) as? VC
-//            else { fatalError("could not instantiateViewController with identifier \(VC.className)") }
-//
-//        let navigationController = ADSNavigationController(rootViewController: viewController)
-//
-//        viewController.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
-//
-//        return (navigationController, viewController)
-//    }
 }

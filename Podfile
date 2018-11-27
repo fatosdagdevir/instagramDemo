@@ -13,6 +13,7 @@ target 'instagramDemo' do
     pod 'RxCocoa',    '~> 4.0'
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'Firebase/Database'
 
   target 'instagramDemoTests' do
     inherit! :search_paths
