@@ -18,7 +18,7 @@ class UserModel: BaseModel {
     
     required init(json: JSON) {
         super.init(json: json)
-        print(json)
+
         id = json["id"].stringValue
         full_name = json["full_name"].stringValue
         profile_picture = json["profile_picture"].stringValue

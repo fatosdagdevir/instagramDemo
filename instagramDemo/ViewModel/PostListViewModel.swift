@@ -11,8 +11,7 @@ import RxSwift
 import SwiftyJSON
 
 class PostListViewModel {
-    
-   // var posts2: Observable<[PostViewModel]>
+
     var posts = Variable<[PostViewModel]>([])
     let disposeBag = DisposeBag()
     
@@ -23,13 +22,5 @@ class PostListViewModel {
             self?.posts.value = postList.map({ PostViewModel(model: $0) })
 
         }).disposed(by: disposeBag)
-//
-       // let test = service.getResponse(with: Constants.User.media).map { PostModel.toModels(json: $0) }
-        
-//        self.posts2 = service.getResponse(with: Constants.User.media).map { [weak self] json -> [PostViewModel]  in
-//            let postList: [PostModel] = PostModel.toModels(json: json)
-//            return postList.map({ PostViewModel(model: $0) })
-//        }
-        
     }
 }

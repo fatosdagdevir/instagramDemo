@@ -71,6 +71,34 @@
             </objects>
             <point key="canvasLocation" x="1956" y="133.5832083958021"/>
         </scene>
+        <!--Add Post View Controller-->
+        <scene sceneID="vdn-cR-eqo">
+            <objects>
+                <viewController storyboardIdentifier="AddPostViewController" id="fg4-CB-EHG" customClass="AddPostViewController" customModule="instagramDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWe-ex-4VB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VML-q3-DWq">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postTapped:" destination="fg4-CB-EHG" eventType="touchUpInside" id="QJb-vv-b3v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VML-q3-DWq" firstAttribute="centerY" secondItem="QWe-ex-4VB" secondAttribute="centerY" id="RCr-ig-j0Z"/>
+                            <constraint firstItem="VML-q3-DWq" firstAttribute="centerX" secondItem="QWe-ex-4VB" secondAttribute="centerX" id="sE6-Tg-gAU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qcq-qH-6Hz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6X-yZ-985" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735.1999999999998" y="134.48275862068968"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HHZ-PJ-PW6">
             <objects>
