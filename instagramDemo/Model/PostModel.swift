@@ -2,14 +2,14 @@
 //  MediaModel.swift
 //  instagramDemo
 //
-//  Created by Fatma Dagdevir [Set Yazilim] on 11/25/18.
+//  Created by Fatma Dagdevir on 11/25/18.
 //  Copyright © 2018 Fatma Dagdevir. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-class MediaModel: BaseModel {
+class PostModel: BaseModel {
     
     var id: String!
     var user: UserModel!

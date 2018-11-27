@@ -6,24 +6,18 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MediaTableViewCell" customModule="instagramDemo" customModuleProvider="target">
-            <connections>
-                <outlet property="locationLabel" destination="xm0-1f-8YQ" id="byi-tV-PYG"/>
-                <outlet property="nameLabel" destination="mC9-SJ-ejN" id="rqf-VU-fFO"/>
-                <outlet property="postImageView" destination="sCf-jM-xKY" id="DWS-Qz-4np"/>
-                <outlet property="profileImageView" destination="xcx-R9-4hG" id="gUR-Xf-Uxf"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MediaTableViewCell" customModule="instagramDemo" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaTableViewCell" rowHeight="390" id="KGk-i7-Jjw" customClass="MediaTableViewCell" customModule="instagramDemo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="514" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="instagramDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="298"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="233.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="297.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcx-R9-4hG">
@@ -44,26 +38,43 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xm0-1f-8YQ">
                                 <rect key="frame" x="0.0" y="17.5" width="44.5" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="DOY-VA-hqE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sCf-jM-xKY">
-                        <rect key="frame" x="32" y="54" width="260" height="154"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sCf-jM-xKY">
+                        <rect key="frame" x="10" y="46" width="300" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="cnE-SV-sbF"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="sCf-jM-xKY" secondAttribute="bottom" id="14D-bf-AGU"/>
                     <constraint firstItem="TVo-v8-puV" firstAttribute="leading" secondItem="xcx-R9-4hG" secondAttribute="trailing" constant="10" id="AhQ-Kt-YvW"/>
                     <constraint firstItem="xcx-R9-4hG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AwW-se-3Bg"/>
+                    <constraint firstItem="sCf-jM-xKY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C3X-Gn-A7d"/>
                     <constraint firstItem="TVo-v8-puV" firstAttribute="centerY" secondItem="xcx-R9-4hG" secondAttribute="centerY" id="HM4-qR-gEP"/>
+                    <constraint firstItem="sCf-jM-xKY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JDt-OQ-ANW"/>
+                    <constraint firstAttribute="trailing" secondItem="sCf-jM-xKY" secondAttribute="trailing" constant="10" id="M6g-Un-KOm"/>
+                    <constraint firstItem="sCf-jM-xKY" firstAttribute="top" secondItem="TVo-v8-puV" secondAttribute="bottom" constant="5" id="M8M-F2-5RP"/>
                     <constraint firstItem="xcx-R9-4hG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rce-wt-eFR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-76" y="-68"/>
+            <connections>
+                <outlet property="imageViewTopConstraint" destination="M8M-F2-5RP" id="Bcf-lk-Tyq"/>
+                <outlet property="locationLabel" destination="xm0-1f-8YQ" id="aFi-Yu-2jd"/>
+                <outlet property="nameLabel" destination="mC9-SJ-ejN" id="HHB-UF-1LH"/>
+                <outlet property="postImageView" destination="sCf-jM-xKY" id="ohB-SR-ug1"/>
+                <outlet property="profileImageView" destination="xcx-R9-4hG" id="jz7-na-K3F"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="-36"/>
         </tableViewCell>
     </objects>
 </document>

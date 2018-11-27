@@ -50,7 +50,7 @@ class LoginViewController: BaseViewController {
         print(authToken)
         InstagramGlobal.shared.auth_token = authToken
         
-        let userMediaVC: UserMediaViewController = UIStoryboard.main.instantiateViewController()
+        let userMediaVC: PostsViewController = UIStoryboard.main.instantiateViewController()
         let navController = UINavigationController(rootViewController: userMediaVC)
         self.present(navController, animated: true, completion: nil)
     }

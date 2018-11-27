@@ -2,7 +2,7 @@
 //  UserModel.swift
 //  instagramDemo
 //
-//  Created by Fatma Dagdevir [Set Yazilim] on 11/25/18.
+//  Created by Fatma Dagdevir on 11/25/18.
 //  Copyright © 2018 Fatma Dagdevir. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class UserModel: BaseModel {
     
     required init(json: JSON) {
         super.init(json: json)
-        
+        print(json)
         id = json["id"].stringValue
         full_name = json["full_name"].stringValue
         profile_picture = json["profile_picture"].stringValue
